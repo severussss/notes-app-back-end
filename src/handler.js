@@ -102,7 +102,7 @@ const deleteNoteByIdHandler = (request, h) => {
           message:'Catatan berhasil dihapus',
         });
         response.code(200);
-        returnresponse;
+        return response;
       }
      
      const response = h.response({
@@ -112,5 +112,6 @@ const deleteNoteByIdHandler = (request, h) => {
       response.code(404);
       return response;
 };
+
 
 module.exports = { addNoteHandler, getAllNotesHandler, getNoteByIdHandler , editNoteByIdHandler, deleteNoteByIdHandler };
